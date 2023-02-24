@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #212121;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+#navbar {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.toggle {
+    cursor: pointer;
+    width: 25px;
+    margin-right: 3px;
+    color: white;
+    background-color: #212121;
+    border: 0;
+}
+
+.toggle i.menu {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    flex: 1;
+}
+
+.search {
+    flex: 2;
+}
+
+.logo i {
+    color: red;
+    margin-right: 1px;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+    height: 25px;
+
+}
+
+.search .search-input {
+    width: 250px;
+    height: 22px;
+    border: 0.1px solid white;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background: hsl(0, 0%, 18.82%);
+    color: white;
+}
+
+.search .search-button {
+    cursor: pointer;
+    width: 40px;
+    height: 22px;
+    border: 0.5px solid white;
+    border-left: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background: hsl(0, 0%, 18.82%);
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+.right-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.right-icon i {
+    width: 15px;
+    margin: 8px;
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.toggle-bar {
+    transform: translate(-200%);
+    display: none;
+}
+
+.side-logo {
+    display: none;
+}
+
+.side-menu {
+    margin: 20px 0 0 5px;
+    width: 200px;
+    font-size: 10px;
+}
+
+.side-menu ul li a i {
+    margin: 0 5px 18px 5px;
+}
+
+.side-menu ul {
+    border-bottom: 1px solid hsl(0, 0%, 18.82%);
+    margin-bottom: 15px;
+}
+
+.main-content-header {
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-content-header li {
+    display: flex;
+    margin: 5px;
+    background: hsl(0, 0%, 18.82%);
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    height: 20px;
+}
+
+.main-content-header li a {
+    font-size: 9px;
+}
+
+.main-content {
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video {
+    display: grid;
+    margin: 1px 1px 30px 1px;
+    width: 200px;
+    border-radius: 11px;
+}
+
+.video-image {
+    width: 100%;
+    height: 130px;
+    margin-bottom: 2px;
+    border-radius: inherit;
+}
+
+.content .profile-image {
+    max-width: 20px;
+    max-height: 20px;
+    border-radius: 25px;
+    margin-right: 2px;
+}
+
+.content .info .title {
+    height: 10px;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.content .info p {
+    height: 10px;
+    font-size: 5px;
+}
+
+@media(max-width:1000px) {
+    .side-logo {
+        display: block;
+        margin: 10px 0px 10px 3px;
+        background: #0f0f0f;
+    }
+
+    .side-logo .side-toggle,
+    .side-logo .side-toggle i {
+        color: white;
+        background: #0f0f0f;
+    }
+
+    .side-logo>i {
+        color: red;
+        margin-right: 5px;
+    }
+
+    .side-menu {
+        margin: 0;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 100%;
+        width: 200px;
+        height: 100vh;
+        z-index: 2;
+        background: #0f0f0f;
+    }
+}
+
+@media(max-width:600px) {
+
+    .search .search-input {
+        width: 150px;
+    }
+
+    .logo .youtube {
+        display: none;
+    }
+}
+
+@media(max-width:400px) {
+    .search .search-input {
+        width: 80px;
+    }
+    .search .search-button {
+        width: 18px;
+    }
+}
